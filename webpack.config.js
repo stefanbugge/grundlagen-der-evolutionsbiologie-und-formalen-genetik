@@ -22,7 +22,7 @@ export default (DEBUG, PATH, PORT=3000) => ({
   debug: DEBUG,
 
   // For options, see http://webpack.github.io/docs/configuration.html#devtool
-  devtool: DEBUG && "eval",
+  devtool: DEBUG && "source-map",
 
   module: {
     loaders: [
