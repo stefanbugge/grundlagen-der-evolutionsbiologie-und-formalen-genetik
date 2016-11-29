@@ -38,7 +38,7 @@ gulp.task('dist:static', () =>
   gulp.src([
     'src/static/**'
   ])
-    .pipe(gulp.dest('dist/grundlagen-der-evolutionsbiologie-und-formalen-genetik'))
+    .pipe(gulp.dest('dist'))
     .pipe($.size({title: 'static'}))
 );
 
