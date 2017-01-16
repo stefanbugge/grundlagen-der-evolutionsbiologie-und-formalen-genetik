@@ -53,9 +53,34 @@
               <h3>Strukturelle und logische Fehler <small>(betreffen auch Tabellen und Abbildungen)</small></h3>
               <p>Werden von uns geprüft und, falls vom "Entdecker" gewünscht, in der Liste mit seinem Namen gekennzeichnet.</p>
 
+              <br />
               <p>Vielen Dank für die Mitarbeit, die sicherlich zur Verbesserung und zum besseren Verständnis des Buches beitragen wird.</p>
-
               <p>Jürgen Tomiuk und Volker Loeschcke</p>
+
+              <p>
+                <script type="text/javascript">
+                    function gen_mail_to_link(options) {
+                        document.write("<a class='btn btn-default' href=\"mailto");
+                        document.write(":" + options.to.lhs + "@");
+                        document.write(options.to.rhs + "?cc");
+                        document.write("=" + options.cc.lhs + "@");
+                        document.write(options.cc.rhs + "&subject=" + options.subject + "\">");
+                        document.write("<i class='glyphicon glyphicon-envelope' aria-hidden='true'></i> " + options.displayText + "<\/a>");
+                    }
+                </script>
+
+                <script type="text/javascript">
+                    gen_mail_to_link({
+                      to: { lhs: 'juergen.tomiuk', rhs: 'gmail.com'},
+                      cc: { lhs: 'volker', rhs: 'bios.au.dk'},
+                      subject: 'Grundlagen der Evolutionsbiologie: schreibfehler',
+                      displayText: "Kontaktieren Sie uns hier"
+                    });
+                </script>
+                <noscript>
+                  <em>Email address protected by JavaScript. Activate JavaScript to see the email.</em>
+                </noscript>
+              </p>
             </div>
           </div>
           <div id="app-container"></div>
