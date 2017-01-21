@@ -58,14 +58,16 @@
               <p>Jürgen Tomiuk und Volker Loeschcke</p>
 
               <p>
+                <span style="margin: 0.5em 0; display: block;"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> <strong>Kontaktieren Sie uns hier:</strong></span>
                 <script type="text/javascript">
                     function gen_mail_to_link(options) {
-                        document.write("<a class='btn btn-default' href=\"mailto");
+                        document.write("<a href=\"mailto");
                         document.write(":" + options.to.lhs + "@");
                         document.write(options.to.rhs + "?cc");
                         document.write("=" + options.cc.lhs + "@");
                         document.write(options.cc.rhs + "&subject=" + options.subject + "\">");
-                        document.write("<i class='glyphicon glyphicon-envelope' aria-hidden='true'></i> " + options.displayText + "<\/a>");
+                        document.write(options.to.lhs + "@");
+                        document.write(options.to.rhs + "</a>");
                     }
                 </script>
 
@@ -90,7 +92,7 @@
                   <div class="errata-item__header"><strong>Abb. 6.4</strong> (Seite 91) – die Fehler sind rot markiert</div>
                   <div class="row">
                     <div class="col-md-12">
-                      <img src="/abb-6_4-s91.png" style="width: 100%;" class="errata-item__image" />
+                      <img src="/abb-6_4-s91.png" style="width: 100%; max-width: 600px" class="errata-item__image" />
                     </div>
                   </div>
                 </li>
