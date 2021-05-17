@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  gefg:
+    restart: "always"
+    image: gefg-image
+    container_name: "gefg"
+    environment:
+      PORT: 80
+      VIRTUAL_HOST: genetik-tomiuk.loeschcke.dk
+      LETSENCRYPT_HOST: genetik-tomiuk.loeschcke.dk
+      LETSENCRYPT_EMAIL: stefan@loeschcke.dk
+
+networks:
+  default:
+    name: letsencrypt
+    
